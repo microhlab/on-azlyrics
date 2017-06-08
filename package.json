@@ -1,0 +1,28 @@
+{
+  "name": "on-azlyrics",
+  "version": "1.0.0",
+  "description": "Azlyrics terminal using Node.js developed by Chien Tran",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marxsm/on-azlyrics.git"
+  },
+  "keywords": [
+    "azlyrics",
+    "terminal",
+    "node.js",
+    "marxsm"
+  ],
+  "author": "Chien Tran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marxsm/on-azlyrics/issues"
+  },
+  "homepage": "https://github.com/marxsm/on-azlyrics#readme",
+  "dependencies": {
+    "async-request": "^1.2.0"
+  }
+}
