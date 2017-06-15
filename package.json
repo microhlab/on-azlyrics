@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/marxsm/on-azlyrics#readme",
   "dependencies": {
-    "async-request": "^1.2.0"
+    "async-request": "^1.2.0",
+    "prompt": "^1.0.0"
   }
 }

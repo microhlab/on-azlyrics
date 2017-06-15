@@ -1,8 +1,10 @@
+process.stdin.resume()
+process.stdin.setEncoding('utf8')
+const util = require('util')
+
 const request = require('async-request')
 
 const pattern = /<a href="http:\/\/azlyrics.com\/lyrics\/(.*).html" target="_blank"><b>(.*)<\/b><\/a>  by <b>(.*)<\/b><br>/g
-
-console.log(pattern)
 
 async function Request(song, page) {
 	try {
@@ -20,7 +22,7 @@ async function GetSongList(song, page) {
 	try {
 		html = await Request(song, page)
 		const songs = pattern.exec(html)
-		console.log(songs)
+		console.log(songs[1])
 		return songs
 	}
 	catch (e) {
@@ -29,4 +31,9 @@ async function GetSongList(song, page) {
 	}
 }
 
-const songs = GetSongList('Sugar', 1)
+function clear() {
+	console.log('\033[2J')
+}
+
+let page = 1
+let song = ''
